@@ -112,7 +112,7 @@ angular.module('lumx.dropdown', [])
             }
             else if ($scope.position === 'right')
             {
-                right = $window.innerWidth - (dropdown.offset().left + dropdown.outerWidth());
+                right = $('body').width() - (dropdown.offset().left + dropdown.outerWidth());
             }
             else if ($scope.position === 'center')
             {
